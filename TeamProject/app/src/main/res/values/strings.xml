@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Team Project</string>
+    <string-array name="campus_spinner">
+        <item>FB Campus*</item>
+        <item>MV Campus*</item>
+        <item>VST Campus</item>
+    </string-array>
+</resources>

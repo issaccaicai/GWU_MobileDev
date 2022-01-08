@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_nav"
+            app:itemBackground="@color/teal_700"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gwu" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="GW Parking"
+                    android:textColor="#063244"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Garage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="University Student Center Garage"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/garage1_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/garage1" />
+
+                    <LinearLayout
+                        android:id="@+id/garage1_layout_details1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/garage1_img"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/address_rating"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Garage1_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                android:id="@+id/Garage1_RatingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="0dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="3.5" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/garage1_location"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:adjustViewBounds="true"
+                                android:cropToPadding="false"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/location" />
+
+                            <TextView
+                                android:id="@+id/Garage1_address_details1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 800 21st St, NW" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/Garage1_address_details2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Entrance on H St near 21st St"
+                            android:textColor="#D4D4D4"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Garage1_Permits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Permit"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Garage1_Permit_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GWorld Debit/Monthly" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <Switch
+                        android:id="@+id/simpleSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Like" />
+                    <TextView
+                        android:id="@+id/switch_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Like this grarge?"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/Garage1_rates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Student rates"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Garage1_rate_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Foggy Bottom Campus*"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Garage1_rates1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Daily Rate (6–2am): $16.50
+                        Evening Rate (after 5pm): $12
+                        Weekend Daily Rate: $12
+                        Monthly Permit: $230
+                        Semester Permit: $920 "/>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/mess_layout">
+
+                    <TextView
+                        android:id="@+id/Garage1_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="A minimum $16.50 is required on their GWorld in order to gain access as an occasional parker. Failure to meet this requirement will result in paying daily visitor rates." />
+                </RelativeLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/notes_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Notes"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:id="@+id/notes_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Note"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/reservation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reserve"
+                    android:background="@color/teal_700"
+                    android:layout_gravity="center_horizontal">
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_map_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Location"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:map="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/google_map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    tools:context="com.example.lecture12.MapsActivity" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/OtherLocations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:text="Other parking locations"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/elliott" />
+
+                            <TextView
+                                android:id="@+id/OtherLocations_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Elliott School" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/g_st" />
+
+                            <TextView
+                                android:id="@+id/OtherLocations_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="G Street" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/media_public" />
+
+                            <TextView
+                                android:id="@+id/OtherLocations_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:text="Media Public" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/amsterdam_hall" />
+
+                            <TextView
+                                android:id="@+id/OtherLocations_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Amsterdam Hall" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

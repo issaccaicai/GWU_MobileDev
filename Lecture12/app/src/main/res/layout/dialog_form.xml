@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <DatePicker
+        android:id="@+id/simpleDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:paddingBottom="10dp"
+        android:padding="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TimePicker
+            android:id="@+id/timepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"/>
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parking hrs"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:id="@+id/submit_button"/>
+</LinearLayout>

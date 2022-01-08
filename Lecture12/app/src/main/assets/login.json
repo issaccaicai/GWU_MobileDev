@@ -1,0 +1,31 @@
+{
+  "login_list": [
+      {
+        "GWID": "G12345678",
+        "FirstName": "Ying",
+        "LastName": "Cai",
+        "Password": "12345678",
+        "Phone": "212-1234-9723",
+        "Email": "ying@gwu.edu",
+        "Role": "Student"
+      },
+    {
+      "GWID": "G87654321",
+      "FirstName": "Qian",
+      "LastName": "Chen",
+      "Password": "87654321",
+      "Phone": "231-4153-3414",
+      "Email": "qian@gwu.edu",
+      "Role": "Student"
+    },
+    {
+      "GWID": "G09876543",
+      "FirstName": "Cristina",
+      "LastName": "Fernandes",
+      "Password": "87654321",
+      "Phone": "123-5342-2132",
+      "Email": "cristina@gwu.edu",
+      "Role": "Faculty"
+    }
+  ]
+}

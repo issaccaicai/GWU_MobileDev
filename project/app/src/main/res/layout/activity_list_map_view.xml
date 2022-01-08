@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_nav"
+            app:itemBackground="@color/teal_700"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECECEC"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/gwu" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="GW Parking"
+                android:textColor="#063244"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/campus_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Foggy Bottom"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="30dp"
+                android:textColor="#063244"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <RadioGroup
+                android:checkedButton="@+id/list"
+                android:id="@+id/toggle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/toggle_outline"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/list"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@drawable/toggle_background"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="List"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/map"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Map"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_map_id">
+            <fragment
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/google_map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                tools:context="com.example.lecture12.MapsActivity" />
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listview"
+            android:descendantFocusability="blocksDescendants"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="5dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

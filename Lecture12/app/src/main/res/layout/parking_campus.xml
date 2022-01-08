@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECECEC"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/gwu" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="GW Parking"
+                android:textColor="#063244"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Campuses"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="30dp"
+            android:textColor="#063244"
+            />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/click_FB"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/campus1"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:importantForAccessibility="no"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/garage1" />
+
+            <TextView
+                android:id="@+id/campus1_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/campus1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#99000000"
+                android:backgroundTint="#CC000000"
+                android:padding="20dp"
+                android:text="Foggy bottom Campus*"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/click_MV"
+            android:background="@color/white"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/campus2"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:importantForAccessibility="no"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mount_campus" />
+            <TextView
+                android:id="@+id/campus2_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#99000000"
+                android:backgroundTint="#CC000000"
+                android:padding="20dp"
+                android:text="Mount Vernon Campus*"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/white"
+                android:layout_alignBottom="@+id/campus2"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/click_VAST"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/campus3"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:importantForAccessibility="no"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/vstc_campus" />
+
+            <TextView
+                android:id="@+id/campus3_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/campus3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#99000000"
+                android:backgroundTint="#CC000000"
+                android:padding="20dp"
+                android:text="VA Science and Technology Campus*"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_nav"
+            app:itemBackground="@color/teal_700"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

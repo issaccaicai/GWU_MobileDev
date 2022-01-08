@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC">
+<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:src="@drawable/gwu"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="GW Parking"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:textColor="#063244"/>
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_search"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            android:layout_weight="3"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"/>
+        <Spinner
+            android:id="@+id/campus_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/Garage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foggy Bottom Campus*"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/garage1_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/garage1" />
+            <LinearLayout
+                android:id="@+id/garage1_layout_details1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_toRightOf="@id/garage1_img"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/Garage1_rates1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Daily Rate (6–2am): $16.50"/>
+                <TextView
+                    android:id="@+id/Garage1_rates2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Evening Rate (after 5pm): $12"/>
+                <TextView
+                    android:id="@+id/Garage1_rates3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Weekend Daily Rate: $12"/>
+                <TextView
+                    android:id="@+id/Garage1_rates4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Monthly Permit: $230"/>
+                <TextView
+                    android:id="@+id/Garage1_rates5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Semester Permit: $920"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/Garage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mount Vernon Campus*"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/garage1_img3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mount_campus" />
+                <LinearLayout
+                    android:id="@+id/garage1_layout_details3"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_toRightOf="@id/garage1_img3"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/Garage1_rates11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Daily GW Rate (0-3 hours): Free"/>
+                    <TextView
+                        android:id="@+id/Garage1_rates12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Daily GW Rate (3-24 hours): $13"/>
+                    <TextView
+                        android:id="@+id/Garage1_rates13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Daily GW Rate (evening after 5pm): $7"/>
+                    <TextView
+                        android:id="@+id/Garage1_rates14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Daily Weekend Rate (Sat 12am - Sun 11:59pm): Free"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/Garage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VA Science and Technology Campus*"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/garage1_img2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/vstc_campus" />
+                <LinearLayout
+                    android:id="@+id/garage1_layout_details2"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_toRightOf="@id/garage1_img2"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/Garage1_rates6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Daily parking is available at no charge for VSTC students, faculty and staff at this campus."/>
+                </LinearLayout>
+            </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+<RelativeLayout
+android:layout_width="wrap_content"
+android:layout_height="35dp"
+android:layout_alignParentEnd="true"
+android:layout_alignParentBottom="true"
+android:background="@color/white"
+android:backgroundTint="#908065">
+
+    <TextView
+        android:id="@+id/hello_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:text="Hello, Cristina"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:adjustViewBounds="true"
+    android:cropToPadding="false"
+    android:scaleType="fitXY"
+    android:src="@drawable/c" />
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Team Project</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_maps">Team Project</string>
+</resources>

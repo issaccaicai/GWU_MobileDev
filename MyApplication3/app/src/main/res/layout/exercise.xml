@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanks for choose our awesome blend tea. How do you want it serving?"
+            android:textSize="16dp"
+            android:layout_margin="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temperature:"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="20dp"/>
+                <ToggleButton
+                    android:id="@+id/toggle_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="Hot"
+                    android:textOff="Hot"
+                    android:onClick="toggleButtonClick" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_milk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:checked="true"
+                        android:onClick="milkCBClick"
+                        android:text="Milk" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_sugar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:onClick="sugarCBClick"
+                        android:text="Sugar"
+                        android:layout_marginLeft="20dp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkbox_Lemon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="lemonCBClick"
+                        android:text="Lemon"
+                        android:layout_marginLeft="20dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

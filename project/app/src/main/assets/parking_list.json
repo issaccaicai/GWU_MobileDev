@@ -1,0 +1,193 @@
+{
+  "parking_list": [
+      {
+        "garage": "G Street",
+        "address": "2028 G Street, NW",
+        "note": "Entrances on both 20th and 21st streets between F and G street",
+        "permit": "Law School Only: Debit/Monthly",
+        "latitude": 38.8978562,
+        "longitude": -77.0457679,
+        "campus":"Foggy Bottom",
+        "rating":3.0,
+        "image": "g_st"
+      },
+    {
+      "garage": "Elliott School",
+      "address": "1957 E Street, NW",
+      "note": "Entrance on 19th Street between E and F streets, NW",
+      "permit": "GWorld Debit/Monthly",
+      "latitude": 38.8971877,
+      "longitude": -77.0445158,
+      "campus":"Foggy Bottom",
+      "rating":4.5,
+      "image": "elliott"
+    },
+    {
+      "garage": "Amsterdam Hall",
+      "address": "2350 H Street, NW",
+      "note": "Entrance on H Street near 22nd Street",
+      "permit": "Monthly",
+      "latitude": 38.8992762,
+      "longitude": -77.0531527,
+      "campus":"Foggy Bottom",
+      "rating":3.5,
+      "image": "amsterdam_hall"
+    },
+  
+    {
+      "garage": "University Student Center Garage",
+      "address": "800 21st Street, NW",
+      "note": "Entrance on H Street near 21st Street",
+      "permit": "Monthly",
+      "latitude": 38.8999317,
+      "longitude": -77.0493921,
+      "campus":"Foggy Bottom",
+      "rating":5.0,
+      "image": "garage1"
+    },
+  
+    {
+      "garage": "Media and Public Affairs Building",
+      "address": "805 21st Street, NW",
+      "note": "Entrance on H Street",
+      "permit": "Monthly",
+      "latitude": 38.899826,
+      "longitude": -77.0483475,
+      "campus":"Foggy Bottom",
+      "rating":4.0,
+      "image": "media"
+    },
+  
+    {
+      "garage": "Funger/Duques",
+      "address": "2201 H Street, NW",
+      "note": "Entrance on H Street between 22nd and 23rd streets",
+      "permit": "Faculty Only",
+      "latitude": 38.8997407,
+      "longitude": -77.0513246,
+      "campus":"Foggy Bottom",
+      "rating":3.5,
+      "image": "funger"
+    },
+  
+    {
+      "garage": "Ross Hall",
+      "address": "830 23rd Street, NW",
+      "note": "Entrance on 23rd Street",
+      "permit": "Monthly",
+      "latitude": 38.9004097,
+      "longitude": -77.0525648,
+      "campus":"Foggy Bottom",
+      "rating":3.0,
+      "image": "ross"
+    },
+  
+    {
+      "garage": "1922 F Street, NW",
+      "address": "1922 F Street, NW",
+      "note": "Entrance on 20th Street near F Street",
+      "permit": "Monthly",
+      "latitude": 38.8968199,
+      "longitude": -77.0465584,
+      "campus":"Foggy Bottom",
+      "rating":4.0,
+      "image": "garage_1922"
+    },
+  
+    {
+      "garage": "Shenkman Hall**",
+      "address": "616 23rd Street, NW",
+      "note": "Entrance on Virginia Ave",
+      "permit": "Monthly",
+      "latitude": 38.897844,
+      "longitude": -77.0525681,
+      "campus":"Foggy Bottom",
+      "rating":4.0,
+      "image": "shenkman"
+    },
+  
+    {
+      "garage": "South Hall**",
+      "address": "2135  F Street,NW",
+      "note": "Entrance on F Street",
+      "permit": "Monthly",
+      "latitude": 38.8975908,
+      "longitude": -77.0502962,
+      "campus":"Foggy Bottom",
+      "rating":3.0,
+      "image": "south"
+    },
+  
+    {
+      "garage": "The Dakota",
+      "address": "2100 F Street, NW",
+      "note": "Entrance on F Street at rear of 2112 F Street, NW",
+      "permit": "Monthly",
+      "latitude": 38.897162,
+      "longitude": -77.0492007,
+      "campus":"Foggy Bottom",
+      "rating":3.5,
+      "image": "dakota"
+    },
+  
+    {
+      "garage": "Lerner Health & Wellness Center",
+      "address": "2301 G Street, NW",
+      "note": "Entrance on G Street",
+      "permit": "Monthly",
+      "latitude": 38.8986758,
+      "longitude": -77.0526978,
+      "campus":"Foggy Bottom",
+      "rating":3.5,
+      "image": "lerner"
+    },
+  
+    {
+      "garage": "Square 54",
+      "address": "2200 Pennsylvania Avenue, NW",
+      "note": "Entrance on 22nd Street between Eye Street and Pennsylvania Avenue, NW",
+      "permit": "MFA, UHS, Physician, Resident",
+      "latitude": 38.9017929,
+      "longitude": -77.0515132,
+      "campus":"Foggy Bottom",
+      "rating":4.5,
+      "image": "square"
+    },
+  
+    {
+      "garage": "Academic Center",
+      "address": "801 22nd Street, NW",
+      "note": "Entrance on Eye Street",
+      "permit": "Monthly",
+      "latitude": 38.9000645,
+      "longitude": -77.0504047,
+      "campus":"Foggy Bottom",
+      "rating":4.0,
+      "image": "academic"
+    },
+
+    {
+      "garage": "Mount Vernon",
+      "address": "2100 Foxhall Road, NW",
+      "note": "None",
+      "permit": "GWorld Debit/Monthly",
+      "latitude": 38.917774,
+      "longitude": -77.0912812,
+      "campus":"Mount Vernon Campus",
+      "rating":4.5,
+      "image": "mount"
+    },
+
+    {
+      "garage": "Virginia Science and Technology",
+      "address": "45085 University Dr, Ashburn, VA",
+      "note": "None",
+      "permit": "GWorld Debit/Monthly",
+      "latitude": 39.0579819,
+      "longitude": -77.4455832,
+      "campus":"VAST Campus",
+      "rating":4.0,
+      "image": "vstc_garage"
+    }
+  ]
+}

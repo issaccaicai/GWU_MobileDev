@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pinterest_icon"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon"
+            android:backgroundTint="@color/white"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message_icon"
+            android:backgroundTint="@color/white"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_icon"
+            android:backgroundTint="@color/white"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image1"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:id="@+id/text_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Road Trip: Big Sur on the
+                Pacific Coast Highway"
+                android:paddingTop="5dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pin_icon"/>
+                <TextView
+                    android:id="@+id/text_view_pin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart_icon"
+                android:layout_marginLeft="10dp" />
+                <TextView
+                    android:id="@+id/text_view_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gray_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user1"
+                    android:layout_marginLeft="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_view_user1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Silvia Oviedo"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/text_view_user1inf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Great Outdoors"
+                    android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:src="@drawable/image2"/>
+            <TextView
+                android:id="@+id/text_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Can't wait to try these out for
+                brunch"
+                android:paddingTop="5dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/green_icon"/>
+                <TextView
+                    android:id="@+id/text_view_martha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Martha Stewart"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pin_icon"/>
+                <TextView
+                    android:id="@+id/text_view_pin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="13"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heart_icon"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:id="@+id/text_view_heart2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="8"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gray_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user2"
+                    android:layout_marginLeft="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/text_view_user2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:text="Silvia Oviedo"/>
+                    <TextView
+                        android:id="@+id/text_view_user2inf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comfort food"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
